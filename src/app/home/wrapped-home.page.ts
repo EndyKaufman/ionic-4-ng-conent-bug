@@ -4,11 +4,11 @@ import { ModalComponent } from './modal/modal.component';
 import { WrappedModalComponent } from './wrapped-modal/modal.component';
 
 @Component({
-  selector: 'app-home',
-  templateUrl: 'home.page.html',
+  selector: 'app-wrapped-home',
+  templateUrl: 'wrapped-home.page.html',
   styleUrls: ['home.page.scss'],
 })
-export class HomePage {
+export class WrappedHomePage {
   constructor(public modalController: ModalController) { }
 
   async openModal(message: string) {

@@ -1,4 +1,7 @@
-<default-page title="Home (incorrect css)">
+<ng-container *ngTemplateOutlet="page.workaround"></ng-container>
+<wrapped-default-page
+    title="Home (with workaround)"
+    #page>
     Any text, below are two buttons :)
     <ion-button
         expand="full"
@@ -10,4 +13,4 @@
         (click)="openWrappedModal('hoi')">
         Open modal (with workaround)
     </ion-button>
-</default-page>
+</wrapped-default-page>

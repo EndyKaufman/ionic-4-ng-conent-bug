@@ -1,13 +1,15 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { RouteReuseStrategy } from '@angular/router';
-
-import { IonicModule, IonicRouteStrategy } from '@ionic/angular';
 import { SplashScreen } from '@ionic-native/splash-screen/ngx';
 import { StatusBar } from '@ionic-native/status-bar/ngx';
-
-import { AppComponent } from './app.component';
+import { IonicModule, IonicRouteStrategy } from '@ionic/angular';
 import { AppRoutingModule } from './app-routing.module';
+import { AppComponent } from './app.component';
+import { DefaultPageModule } from './default-page/default-page.module';
+import { WrappedDefaultPageModule } from './wrapped-default-page/default-page.module';
+
+
 
 @NgModule({
   declarations: [AppComponent],
@@ -15,6 +17,8 @@ import { AppRoutingModule } from './app-routing.module';
   imports: [
     BrowserModule,
     IonicModule.forRoot(),
+    DefaultPageModule,
+    WrappedDefaultPageModule,
     AppRoutingModule
   ],
   providers: [
@@ -24,4 +28,4 @@ import { AppRoutingModule } from './app-routing.module';
   ],
   bootstrap: [AppComponent]
 })
-export class AppModule {}
+export class AppModule { }
