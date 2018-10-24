@@ -10,7 +10,8 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "deploy": "gh-pages -d www"
+    "github:build": "ng build --base-href /ionic-4-ng-conent-bug/",
+    "github:deploy": "gh-pages -d www"
   },
   "private": true,
   "dependencies": {
